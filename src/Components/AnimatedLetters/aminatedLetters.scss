@@ -15,7 +15,8 @@
 
   &:hover {
     animation: rubberBand 1s;
-    color: var(--color-tertiary);
+    color: var(--color-quaternary);
+    cursor: pointer;
   }
 }
 
