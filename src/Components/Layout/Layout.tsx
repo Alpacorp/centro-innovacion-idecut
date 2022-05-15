@@ -33,7 +33,6 @@ const Layout = () => {
     "2",
     "2",
   ];
-  const textCun = ["C", "u", "n", "d", "i", "n", "a", "m", "a", "r", "c", "a"];
   const textInvite = [
     "I",
     "n",
