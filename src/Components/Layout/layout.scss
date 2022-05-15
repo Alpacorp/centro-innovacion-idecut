@@ -1,0 +1,159 @@
+@import '../../design-vars.scss';
+
+.layout {
+  background-image: url('../../Components/assets/images/fondo.png');
+  background-position: center;
+  object-fit: cover;
+  padding-block: 50px;
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Oswald Demi Bold', sans-serif;
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: pulse 1s;
+
+      .main-content-title {
+        font-size: 38px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-block: 20px;
+        background: var(--color-primary);
+        background: linear-gradient(90deg, var(--color-primary) 19%, var(--color-secondary) 100%);
+        padding: 3px 10px;
+        color: var(--color-white);
+        border-radius: 12px;
+      }
+
+      .main-content-subtitle {
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: bold;
+        color: transparent;
+        background: linear-gradient(90deg, var(--color-primary) 19%, var(--color-secondary) 100%);
+        background-clip: text;
+      }
+
+      .create {
+        img {
+          max-width: 400px;
+          width: 100%;
+        }
+      }
+
+      .first-text {
+        font-family: "Gotham medium";
+
+        h1 {
+          font-size: 16px;
+          font-weight: bold;
+          color: var(--color-primary);
+          padding-inline: 100px;
+        }
+      }
+
+      .second-text {
+        text-transform: uppercase;
+        color: var(--color-tertiary);
+        font-family: 'Oswald Demi Bold';
+
+        h2 {
+          margin: 0;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        h3 {
+          margin: 0;
+          font-size: 17px;
+
+          &::before {
+            content: "*";
+          }
+
+          &::after {
+            content: "*";
+          }
+        }
+      }
+
+      .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-block: 20px;
+
+        figure {
+          margin: 0;
+          padding: 0;
+
+          img {
+            width: 20px;
+            margin-inline: 5px;
+          }
+        }
+      }
+
+      .categories {
+        font-family: 'Oswald Demi Bold';
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-weight: bold;
+        max-width: 300px;
+        width: 100%;
+
+        h4 {
+          color: var(--color-primary);
+          margin-inline: 2px;
+          margin-block: 0;
+
+          &::before {
+            content: "/";
+            margin: 0 3px ;
+          }
+        }
+
+      }
+    }
+    .sidebar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 700px;
+      width: 100%;
+
+      iframe {
+        max-width: 700px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.314);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .layout main {
+    display: block;
+  }
+
+  .layout .sidebar {
+    text-align: center;
+    margin: 50px auto;
+    height: 500px;
+  }
+}
