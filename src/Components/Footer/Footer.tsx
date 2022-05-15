@@ -11,7 +11,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="container">
           <div className="footer-content">
-            Todos los derechos reservados IDECUT - Corazonarte{" "}
+            Todos los derechos reservados IDECUT | Corazonarte{" "}
             <span className="emoji">♥️</span> | {getCurrentYear()}
           </div>
         </div>

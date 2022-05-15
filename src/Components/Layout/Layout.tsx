@@ -15,7 +15,6 @@ import "./layout.scss";
 
 const Layout = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-
   const textArray = [
     "C",
     "o",
@@ -35,6 +34,23 @@ const Layout = () => {
     "2",
   ];
   const textCun = ["C", "u", "n", "d", "i", "n", "a", "m", "a", "r", "c", "a"];
+  const textInvite = [
+    "I",
+    "n",
+    "s",
+    "c",
+    "r",
+    "í",
+    "b",
+    "e",
+    "t",
+    "e",
+    "",
+    "a",
+    "q",
+    "u",
+    "í",
+  ];
 
   useEffect(() => {
     setTimeout(() => {
@@ -56,11 +72,7 @@ const Layout = () => {
                 />
               </div>
               <div className="main-content-subtitle">
-                <AnimatedLetters
-                  strArray={textCun}
-                  letterClass={letterClass}
-                  idx={1}
-                />
+                <h1>Cundinamarca</h1>
               </div>
               <div className="create">
                 <figure>
@@ -68,10 +80,10 @@ const Layout = () => {
                 </figure>
               </div>
               <div className="first-text">
-                <h1>
+                <h2>
                   Estimulos para personas jurídicas, personas naturales y grupos
                   constituidos
-                </h1>
+                </h2>
               </div>
               <div className="second-text">
                 <h2>Más de $1.400 millones</h2>
@@ -114,7 +126,14 @@ const Layout = () => {
                 <h4>Música</h4>
               </div>
             </div>
-            <div className="sidebar">
+            <div className="sidebar main-content">
+              <div className="main-content-title">
+                <AnimatedLetters
+                  strArray={textInvite}
+                  letterClass={letterClass}
+                  idx={1}
+                />
+              </div>
               <iframe
                 className="survey-monkey-form"
                 src="https://es.surveymonkey.com/r/22Z3FWL"
