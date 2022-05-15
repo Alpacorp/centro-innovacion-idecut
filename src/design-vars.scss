@@ -1,0 +1,23 @@
+@import 'animate.css';
+
+:root {
+  --color-primary: #0039df;
+  --color-secondary: #ec0028;
+  --color-tertiary: #d31144;
+  --color-white: #fff;
+}
+
+@font-face {
+  font-family: 'Gotham bold';
+  src: url('./../src/Components/assets/fonts/GOTHAM-BOLD_0.OTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham medium';
+  src: url('./Components/assets/fonts/GothamMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oswald Demi Bold';
+  src: url('./Components/assets/fonts/Oswald-DemiBold.ttf') format('truetype');
+}

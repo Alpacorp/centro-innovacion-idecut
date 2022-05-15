@@ -1,0 +1,64 @@
+@import '../../design-vars.scss';
+
+.header {
+  background: var(--color-primary);
+  background: linear-gradient(90deg, var(--color-primary) 19%, var(--color-secondary) 100%);
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-logo {
+      figure {
+        img {
+          max-width: 300px;
+          width: 100%;
+          margin-inline: 30px;
+        }
+      }
+    }
+
+    .complementary-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      figure {
+        margin: 30px;
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header {
+    .container {
+      .main-logo {
+        figure {
+          img {
+            max-width: 200px;
+            width: 100%;
+            margin-inline: 20px;
+          }
+        }
+      }
+
+      .complementary-logos {
+        text-align: center;
+        margin: auto;
+        figure {
+          margin: 20px;
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

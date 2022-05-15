@@ -1,0 +1,15 @@
+@import '../../design-vars.scss';
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: bold;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Oswald Demi Bold';
+
+  .emoji {
+    color: var(--color-secondary);
+  }
+}
+
