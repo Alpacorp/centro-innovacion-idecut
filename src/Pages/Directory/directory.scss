@@ -3,5 +3,12 @@
 .directory-main {
   background: url('../../Components/assets/images/vector-back.png') no-repeat left center fixed;
   background-size: contain;
-  padding-block: 80px;
+  padding: 50px 20px 500px 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .directory-main {
+    background: none;
+    padding: 20px;
+  }
 }

@@ -6,6 +6,7 @@ import {
   mediaIcon,
   museumIcon,
   theaterIcon,
+  footerDirImg,
 } from "../assets/images";
 import "./contentDirectory.scss";
 
@@ -19,9 +20,12 @@ const ContentDirectory = () => {
               <h2>
                 Haz parte del directorio de agentes culturales de Cundinamarca
               </h2>
+              <figure>
+                <img src={footerDirImg} alt="idecut" />
+              </figure>
             </div>
             <div className="categories-content">
-              <h4>Selecciona tu área e inscríbete</h4>
+              <h2>Selecciona tu área e inscríbete</h2>
               <div className="cards">
                 <a href="https://es.surveymonkey.com/r/MVWL9S3" target="blank">
                   <div className="card">
