@@ -5,11 +5,13 @@
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
     .main-logo {
       figure {
+        margin: 0;
         img {
           max-width: 300px;
           width: 100%;
@@ -26,15 +28,43 @@
         font-family: 'Gotham bold';
         font-size: 30px;
         color: var(--color-blue-directory);
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
 
       h2 {
         margin: 0;
         font-family: 'Gotham bold';
-        text-decoration: underline;
-        text-decoration: underline var(--color-blue-directory);
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-directory {
+
+    .container {
+
+      .main-logo {
+        margin: auto;
+
+        figure {
+
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+
+      .complementary-content {
+        text-align: center;
+        margin: auto;
+
+        h1 {
+          font-size: 20px;
+        }
+
+        h2 {
+          font-size: 16px;
+        }
       }
     }
   }
