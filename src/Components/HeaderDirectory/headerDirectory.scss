@@ -1,0 +1,41 @@
+@import '../../design-vars.scss';
+
+.header-directory {
+  background: transparent;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-logo {
+      figure {
+        img {
+          max-width: 300px;
+          width: 100%;
+          margin-inline: 30px;
+        }
+      }
+    }
+
+    .complementary-content {
+      text-align: right;
+
+      h1 {
+        margin: 0;
+        font-family: 'Gotham bold';
+        font-size: 30px;
+        color: var(--color-blue-directory);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      h2 {
+        margin: 0;
+        font-family: 'Gotham bold';
+        text-decoration: underline;
+        text-decoration: underline var(--color-blue-directory);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
