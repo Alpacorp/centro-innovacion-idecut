@@ -155,17 +155,24 @@
 @media screen and (max-width: 800px) {
   .layout main {
     display: block;
-  }
 
-  .layout .sidebar {
-    text-align: center;
-    max-width: 400px;
-    margin: 50px 5px;
-    height: 500px;
+    .main-content-subtitle {
+      h1 {
+        font-size: 30px;
+      }
+    }
 
-    iframe {
-      max-width: none;
-      width: none;
+    .sidebar {
+      text-align: center;
+      max-width: 400px;
+      margin: 50px 5px;
+      height: 500px;
+      width: auto;
+
+      iframe {
+        max-width: none;
+        width: none;
+      }
     }
   }
 }
