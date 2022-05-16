@@ -10,6 +10,16 @@ import eventos from "./eventos.png";
 import arte from "./arte.png";
 import artesanias from "./artesanias.png";
 import musica from "./musica.png";
+import logoIdecut from "./logo-idecut.svg";
+import artIcon from "./art-icon.png";
+import libraryIcon from "./library-icon.png";
+import culturalIcon from "./cultural-icon.png";
+import theaterIcon from "./theater-icon.png";
+import mediaIcon from "./media-icon.png";
+import museumIcon from "./museum-icon.png";
+import heritageIcon from "./heritage-icon.png";
+import footerDirImg from "./footer-img.png";
+import vectorBack from "./vector-back.png";
 
 export {
   mainLogo,
@@ -24,4 +34,14 @@ export {
   arte,
   artesanias,
   musica,
+  logoIdecut,
+  artIcon,
+  libraryIcon,
+  culturalIcon,
+  theaterIcon,
+  mediaIcon,
+  museumIcon,
+  heritageIcon,
+  footerDirImg,
+  vectorBack,
 };
