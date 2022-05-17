@@ -18,12 +18,18 @@
         justify-content: space-between;
         align-items: left;
 
+        h3 {
+          position: absolute;
+          z-index: 1;
+          bottom: 200px;
+        }
+
         img {
           max-width: 500px;
           width: 100%;
           text-align: left;
           margin-inline-start: -200px;
-          position: absolute;
+          position: fixed;
           z-index: 0;
           bottom: 0;
         }
@@ -40,41 +46,40 @@
         .cards {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-evenly;
+          justify-content: center;
+          align-items: center;
 
           a {
             text-decoration: none;
+            margin: 15px;
 
             .card {
-              flex: 1;
               display: flex;
               flex-direction: column;
               align-items: center;
               justify-content: center;
-              margin: 15px;
-              padding: 30px;
+              padding: 5px 0;
               color: var(--color-blue-directory);
               font-weight: bold;
-              text-align: center;
               font-family: 'Oswald Demi Bold';
               box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.314);
-              max-width: 40px;
-              width: 100%;
-              max-height: 80px;
+              width: 300px;
               height: 100%;
               border-radius: 15px;
 
               .card-image {
                 img {
-                  max-width: 80px;
+                  max-width: 60px;
                   width: 100%;
+                  height: 100%;
                 }
               }
 
               .card-text {
                 h3 {
                   text-align: left;
-                  font-size: 10px;
+                  font-size: 15px;
+                  margin: 0;
                 }
               }
 
@@ -89,6 +94,24 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 840px){
+  .content-directory {
+
+    .container {
+      main {
+
+        .main-content {
+          h3 {
+            display: none;
+          }
+        }
+
+      }
+    }
+
   }
 }
 

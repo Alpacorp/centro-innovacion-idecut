@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   artIcon,
   culturalIcon,
@@ -20,6 +21,10 @@ const ContentDirectory = () => {
               <h2>
                 Haz parte del directorio de agentes culturales de Cundinamarca
               </h2>
+              <h3>
+                Ingresa y regístrate en{" "}
+                <Link to="/corazonarte">Corazonarte</Link>
+              </h3>
               <figure>
                 <img src={footerDirImg} alt="idecut" />
               </figure>
@@ -72,7 +77,10 @@ const ContentDirectory = () => {
                       />
                     </div>
                     <div className="card-text">
-                      <h3>Industrias creativas y culturales</h3>
+                      <h3>
+                        Industrias creativas
+                        <wbr /> y culturales
+                      </h3>
                     </div>
                   </div>
                 </a>

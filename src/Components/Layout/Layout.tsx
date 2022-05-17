@@ -12,6 +12,7 @@ import {
 } from "../assets/images";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./layout.scss";
+import { Link } from "react-router-dom";
 
 const Layout = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -83,6 +84,12 @@ const Layout = () => {
                   Estimulos para personas jurídicas, personas naturales y grupos
                   constituidos
                 </h2>
+                <h2>
+                  Ten presente que para inscribirte debes registrarte en el{" "}
+                  <Link to="/directorio-cultural">
+                    directorio cultural del IDECUT
+                  </Link>
+                </h2>
               </div>
               <div className="second-text">
                 <h2>Más de $1.400 millones</h2>
@@ -118,11 +125,10 @@ const Layout = () => {
                 <h4>Bibliotecas</h4>
                 <h4>Literatura</h4>
                 <h4>Patrimonio Cultural</h4>
-                <h4>Artes Escénicas</h4>
+                <h4>Artes Escénicas (teatro, danza y música)</h4>
                 <h4>Eventos</h4>
                 <h4>Artes plásticas y visuales</h4>
                 <h4>Artesanías</h4>
-                <h4>Música</h4>
               </div>
             </div>
             <div className="sidebar main-content">
