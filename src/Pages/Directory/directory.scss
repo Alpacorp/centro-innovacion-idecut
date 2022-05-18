@@ -1,12 +1,16 @@
 @import '../../design-vars.scss';
 
 .directory-main {
-  background: url('../../Components/assets/images/vector-back.png') no-repeat left center fixed;
+  background: url('../../Components/assets/images/back-blue.svg') no-repeat left center fixed;
   background-size: contain;
-  padding: 50px 20px 500px 20px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .directory-main {
     background: none;
     padding: 20px;

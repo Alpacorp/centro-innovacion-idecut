@@ -1,42 +1,53 @@
 @import '../../design-vars.scss';
 
 .content-directory {
+  font-family: 'Roboto', sans-serif;
 
   .container {
-    font-family: 'Gotham Bold';
 
     main {
       display: flex;
-      flex-wrap: wrap;
+      font-size: 12px;
 
       .main-content {
-        color: #606060;
+        color: var(--color-white);
         width: 100%;
-        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: left;
 
-        h3 {
-          position: absolute;
-          z-index: 1;
-          bottom: 200px;
+        h2 {
+          width: 50%;
+          font-weight: 500;
         }
 
-        img {
-          max-width: 500px;
-          width: 100%;
-          text-align: left;
-          margin-inline-start: -200px;
-          position: fixed;
-          z-index: 0;
-          bottom: 0;
+        h3 {
+          font-weight: 400;
+
+          a {
+            color: var(--color-white);
+
+            &:hover {
+              color: var(--color-tertiary);
+            }
+          }
+        }
+
+        .emoji {
+          color: var(--color-secondary);
+        }
+
+        figure {
+          margin: 0;
+
+          img {
+            width: 500px;
+          }
         }
       }
 
       .categories-content {
-        flex: 1;
         text-align: right;
 
         h2 {
@@ -54,22 +65,21 @@
             margin: 15px;
 
             .card {
+              background: #fff;
               display: flex;
               flex-direction: column;
               align-items: center;
               justify-content: center;
               padding: 5px 0;
               color: var(--color-blue-directory);
-              font-weight: bold;
-              font-family: 'Oswald Demi Bold';
               box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.314);
-              width: 300px;
-              height: 100%;
+              width: 130px;
+              height: 90px;
               border-radius: 15px;
 
               .card-image {
                 img {
-                  max-width: 60px;
+                  max-width: 40px;
                   width: 100%;
                   height: 100%;
                 }
@@ -77,9 +87,10 @@
 
               .card-text {
                 h3 {
-                  text-align: left;
-                  font-size: 15px;
-                  margin: 0;
+                  text-align: center;
+                  font-size: 12px;
+                  margin-block: 5px;
+                  font-weight: 500;
                 }
               }
 
@@ -102,10 +113,20 @@
 
     .container {
       main {
+        flex-wrap: wrap;
 
         .main-content {
+
+          h2 {
+            margin: auto;
+          }
+
           h3 {
-            display: none;
+            color: var(--color-blue-directory);
+
+            a {
+              color: var(--color-blue-directory);
+            }
           }
         }
 
@@ -135,7 +156,17 @@
         }
 
         h2 {
+          color: var(--color-blue-directory);
           font-size: 20px;
+          margin: auto;
+        }
+
+        h3 {
+          color: var(--color-blue-directory);
+
+          a {
+            color: var(--color-blue-directory);
+          }
         }
       }
     }

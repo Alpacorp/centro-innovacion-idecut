@@ -24,6 +24,7 @@ const ContentDirectory = () => {
               <h3>
                 Ingresa y regístrate en{" "}
                 <Link to="/corazonarte">Corazonarte</Link>
+                <span className="emoji"> ♥️</span>
               </h3>
               <figure>
                 <img src={footerDirImg} alt="idecut" />
