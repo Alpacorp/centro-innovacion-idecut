@@ -124,6 +124,19 @@ const ContentDirectory = () => {
                     </div>
                   </div>
                 </a>
+                <a href="https://es.surveymonkey.com/r/XQBRSSV" target="blank">
+                  <div className="card">
+                    <div className="card-image">
+                      <img
+                        src={artIcon}
+                        alt="Icono del directorio de Artesanías"
+                      />
+                    </div>
+                    <div className="card-text">
+                      <h3>Artesanías</h3>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </main>
