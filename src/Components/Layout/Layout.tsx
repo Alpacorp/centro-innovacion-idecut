@@ -35,30 +35,7 @@ const Layout = () => {
     "2",
     "2",
   ];
-  const textInvite = [
-    "G",
-    "r",
-    "a",
-    "c",
-    "i",
-    "a",
-    "s",
-    "",
-    "p",
-    "o",
-    "r",
-    "",
-    "p",
-    "a",
-    "r",
-    "t",
-    "i",
-    "c",
-    "i",
-    "p",
-    "a",
-    "r",
-  ];
+  const textInvite = ["G", "r", "a", "c", "i", "a", "s"];
 
   useEffect(() => {
     setTimeout(() => {
@@ -139,7 +116,7 @@ const Layout = () => {
                 <h4>Artesanías</h4>
               </div>
             </div>
-            <div className="sidebar main-content">
+            <div className="main-content">
               <div className="main-content-title">
                 <AnimatedLetters
                   strArray={textInvite}
@@ -153,7 +130,7 @@ const Layout = () => {
                 </figure>
                 <h3>
                   Conoce a los participante en el siguiente{" "}
-                  <a href="/" target="blank">
+                  <a href="data" target="blank">
                     enlace
                   </a>
                 </h3>
