@@ -9,6 +9,7 @@ import {
   patrimonio,
   musica,
   teatro,
+  thanks,
 } from "../assets/images";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./layout.scss";
@@ -35,21 +36,28 @@ const Layout = () => {
     "2",
   ];
   const textInvite = [
-    "I",
-    "n",
-    "s",
-    "c",
+    "G",
     "r",
-    "í",
-    "b",
-    "e",
-    "t",
-    "e",
-    "",
     "a",
-    "q",
-    "u",
-    "í",
+    "c",
+    "i",
+    "a",
+    "s",
+    "",
+    "p",
+    "o",
+    "r",
+    "",
+    "p",
+    "a",
+    "r",
+    "t",
+    "i",
+    "c",
+    "i",
+    "p",
+    "a",
+    "r",
   ];
 
   useEffect(() => {
@@ -139,12 +147,17 @@ const Layout = () => {
                   idx={1}
                 />
               </div>
-              <iframe
-                className="survey-monkey-form"
-                src="https://es.surveymonkey.com/r/22Z3FWL"
-                title="Convocatoria"
-                frameBorder="0"
-              ></iframe>
+              <div className="main-content-thanks">
+                <figure>
+                  <img src={thanks} alt="gracias por participar" />
+                </figure>
+                <h3>
+                  Conoce a los participante en el siguiente{" "}
+                  <a href="/" target="blank">
+                    enlace
+                  </a>
+                </h3>
+              </div>
             </div>
           </main>
         </div>

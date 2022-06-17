@@ -20,6 +20,7 @@ import museumIcon from "./museum-icon.png";
 import heritageIcon from "./heritage-icon.png";
 import footerDirImg from "./footer-img.png";
 import vectorBack from "./vector-back.png";
+import thanks from "./thanks.jpg";
 
 export {
   mainLogo,
@@ -44,4 +45,5 @@ export {
   heritageIcon,
   footerDirImg,
   vectorBack,
+  thanks,
 };
