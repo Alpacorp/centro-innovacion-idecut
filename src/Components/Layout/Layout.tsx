@@ -128,12 +128,12 @@ const Layout = () => {
                 <figure>
                   <img src={thanks} alt="gracias por participar" />
                 </figure>
-                <h3>
+                {/* <h3>
                   Conoce a los participante en el siguiente{" "}
                   <a href="data" target="blank">
                     enlace
                   </a>
-                </h3>
+                </h3> */}
               </div>
             </div>
           </main>
