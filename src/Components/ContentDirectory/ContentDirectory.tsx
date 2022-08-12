@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import {
   artIcon,
   culturalIcon,
@@ -15,17 +15,15 @@ const ContentDirectory = () => {
   return (
     <>
       <section className="content-directory">
+        <Helmet>
+          <title>Directorio Cultural</title>
+        </Helmet>
         <div className="container">
           <main>
             <div className="main-content">
               <h2>
                 Haz parte del directorio de agentes culturales de Cundinamarca
               </h2>
-              <h3>
-                Ingresa y regístrate en{" "}
-                <Link to="/corazonarte">Corazonarte</Link>
-                <span className="emoji"> ♥️</span>
-              </h3>
               <figure>
                 <img src={footerDirImg} alt="idecut" />
               </figure>
