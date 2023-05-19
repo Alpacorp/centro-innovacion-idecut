@@ -139,6 +139,11 @@ const ContentDirectory = () => {
                   </div>
                 </a>
               </div>
+              <p style={{ textAlign: "left" }}>
+                <strong>Nota:</strong> turismo cultural, grupos
+                afrodescendientes y poblaciones indigenas se pueden inscribir
+                por su línea especifica o por patrimonio cultural
+              </p>
             </div>
           </main>
         </div>
