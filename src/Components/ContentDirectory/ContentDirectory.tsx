@@ -109,7 +109,10 @@ const ContentDirectory = () => {
                     </div>
                   </div>
                 </a>
-                <a href="https://es.surveymonkey.com/r/6WNVDLN" target="blank">
+                <a
+                  href="https://es.surveymonkey.com/r/direcpatri"
+                  target="blank"
+                >
                   <div className="card">
                     <div className="card-image">
                       <img
