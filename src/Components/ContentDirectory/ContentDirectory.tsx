@@ -30,6 +30,13 @@ const ContentDirectory = () => {
             </div>
             <div className="categories-content">
               <h2>Selecciona tu área e inscríbete</h2>
+              <p style={{ textAlign: "left" }}>
+                <strong>Tener en cuenta:</strong> Si usted se inscribió en el
+                Directorio Agentes Culturales 2022, este año debe inscribirse de
+                nuevo con otro email o ingresando por incógnito y realizar la
+                inscripción. Para la convocatoria 2023 se revisarán los
+                registros de este año al directorio.
+              </p>
               <div className="cards">
                 <a href="https://es.surveymonkey.com/r/MVWL9S3" target="blank">
                   <div className="card">
